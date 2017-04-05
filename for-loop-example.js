@@ -7,27 +7,26 @@ function showArray(array){
     console.log("=========");
 }
 
-function fillArray(i,f,s) {
-    myArray = [];
+function fillArray(a,i,f,s) {
+    a.length = 0;
     var j = 0;
     if (s > 0){
         for (j = i; j <= f; j += s) {
-            myArray.push(j);
+            a.push(j);
         }
     }
     else {
         for (j = i; j >= f; j += s) {
-            myArray.push(j);
+            a.push(j);
         }
     }
 }
 
-
-fillArray(1,5,1);
+fillArray(myArray,1,5,1);
 showArray(myArray);
 
-fillArray(1,9,2);
+fillArray(myArray,1,9,2);
 showArray(myArray);
 
-fillArray(9,1,-2);
+fillArray(myArray,9,1,-2);
 showArray(myArray);
